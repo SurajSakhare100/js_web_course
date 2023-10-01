@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Course ch-9</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      
+      }
+      .card{
+        width: 30%;
+        height: 400px;
+        background-color: aqua;
+        margin: 20px;
+        /* background-size: contain; */
+        border: 2px black solid;
+      }
+      .container{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+      }
+      h1{
+        display: flex;
+        justify-content:center;
+        margin: 20px;
+        align-items: center;
+      }
+      .win_box{
+        height: 80px;
+        width: 70%;
+        background-color: yellow;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+      }
+      button{
+        width: 80px;
+        height: 30px;
+        right: 28%;
+        bottom: 18%;
+        position: absolute;
+        background-color: greenyellow;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+      }
+      .score{
+        width: 80px;
+        height: 40px;
+        background-color: red;
+        border-radius: 5px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 3%;
+        right: 25%;
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>STONE PAPER SCISSOR</h1>
+    <div class="container">
+      <div class="card" id="STONE"><img src="stone.png" alt="stone" width="100%" height="400px">
+      </div>
+      <div class="card" id="PAPER"><img src="paper.jpg" alt="paper" width="100%" height="400px">
+      </div>
+      <div class="card" id="SCISSOR"><img src="scissor.png" alt="scissor" width="100%" height="400px">
+      </div>
+    </div>
+    <div id="win_box" class="win_box">choose your card
+    </div>
+    <button id="replay">Retry</button>
+    <div class="score" id="score">0</div>
+    <script src="script.js"></script>
+  </body>
+</html>

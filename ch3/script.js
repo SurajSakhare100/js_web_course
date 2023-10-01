@@ -1,0 +1,12 @@
+console.log("har\"".length);
+const sentence= 'The quick Brown fox jumps over the lazy dog';
+const word='dog';
+console.log(sentence.startsWith(word));
+console.log(sentence.endsWith(word));
+console.log(sentence.toUpperCase());
+console.log(sentence.toLowerCase());
+console.log(`the word "${word}" ${sentence.includes(word)? 'is':'is not'} in the sentence `);
+const str ="please give me Rs 1000";
+let amount=Number.parseInt(str.slice("please give me Rs ".length));
+console.log(amount);
+console.log(typeof(amount));
