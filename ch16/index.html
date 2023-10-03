@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Course ch-16</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+      .container {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+      }
+      #box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+      }
+      .time {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(200, 138, 138);
+      }
+      #date {
+        width: 80%;
+        height: 10%;
+        background-color: orangered;
+        margin: 2%;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="date"></div>
+      <div id="box">
+        <div class="time" id="hour"></div>
+        <div class="time" id="minute"></div>
+        <div class="time" id="sec"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
