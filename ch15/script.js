@@ -1,4 +1,3 @@
-q1
 const loadscript=async(src)=>{
     return new Promise((resolve, reject) => {
         let script=document.createElement("script")
